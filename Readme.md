@@ -1,4 +1,4 @@
-# Conversation Commerce Bot Handling Order Management
+# Conversational Commerce Bot Handling Order Management
 This is a chat bot built using Microsoft Bot Framework using C# and .NET. It uses [LUIS.ai](https://www.luis.ai) for Natural Language Processing. It also uses Bot State Service for keeping state context between each message. You can find more information about the framework [here](https://docs.botframework.com/en-us/csharp/builder/sdkreference/index.html). 
 
 ## Download the Microsoft Bot Emulator
