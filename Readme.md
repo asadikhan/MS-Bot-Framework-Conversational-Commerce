@@ -56,3 +56,18 @@ There will be a more detailed tutorial on this solution on my blog. This space w
 ## Sample Emulator Chat
 
 ![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SampleEmulatorChat.png)
+
+## LUIS Intents
+
+These are the intents defined in LUIS. 
+
+![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/LUISIntents.png)
+
+## LUIS Sample Intent
+
+This is an example of a LUIS intent for Order Status. 
+
+![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SampleIntent.png)
+
+
+
