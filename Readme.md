@@ -19,31 +19,35 @@ You can read more about authentication and deployment [here](https://docs.botfra
 
 ## Solution Overview
 
+![alt tag](https://raw.githubusercontent.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/master/samplebot/images/SolutionOverview.png)
 
-![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SolutionOverview.png)
-
-Controller
-	/MessagesController.cs *This contains the main class responsible for the conversation. The entry point for each message is the following post message. *
-
+**Controller/MessagesController.cs** 
+This contains the main class responsible for the conversation. The entry point for each message is the following post message.
 ```sh 
 public virtual async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 ```
-							*MessageController also contains the LuisDialog class which has all the methods mapped to the LUIS intents. *
+MessageController also contains the LuisDialog class which has all the methods mapped to the LUIS intents. 
 							
-	/StateController.cs		*This class is not a controller in the MVC sense, but rather has only two methods for saving and getting conversation level data. This helps you track context of a conversation. In our solution, we use this to track what is the current intent of the user. There is also User level data state and Private Conversation state. We didn't use those in our solution, but you can read more about Bot state service [here](https://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html). 
+**Controller/StateController.cs**
+This class is not a controller in the MVC sense, but rather has only two methods for saving and getting conversation level data. This helps you track context of a conversation. In our solution, we use this to track what is the current intent of the user. There is also User level data state and Private Conversation state. We didn't use those in our solution, but you can read more about Bot state service [here](https://docs.botframework.com/en-us/csharp/builder/sdkreference/stateapi.html). 
 	
-Entities
-	/ConversationState.cs 	*A static class to help drive conversation state with strongly-typed strings.*
-	/Order.cs				*A sample order entity class with some basic properties*
+**Entities/ConversationState.cs**
+A static class to help drive conversation state with strongly-typed strings.
+
+**Entities/Order.cs**
+A sample order entity class with some basic properties.
 	
-App_Start
-	/PrepareSampleOrders.cs	*This init class loads a few sample orders for the business layer*. 
+**App_Start/PrepareSampleOrders.cs**
+This init class loads a few sample orders for the business layer.
 	
-Business
-	/OrderManager.cs		*This is a stub class that has some basic functions to fullfil order management like cancel or return an order, etc. In real world, this would be your integration with the order business layer.*
-	ResourceController.cs	*To avoid polluting MessagesController.cs with text messages, this class is responsible for reading the messages out of the BotMessages.resx and sending them to the MessageController calling class. This can also help in future with multi-language support. Any messages to be changed are simply done in the .resx file, and no code compile is necessary. *
+**Business/OrderManager.cs**
+This is a stub class that has some basic functions to fullfil order management like cancel or return an order, etc. In real world, this would be your integration with the order business layer.
+
+**Business/ResourceController.cs**
+To avoid polluting MessagesController.cs with text messages, this class is responsible for reading the messages out of the BotMessages.resx and sending them to the MessageController calling class. This can also help in future with multi-language support. Any messages to be changed are simply done in the .resx file, and no code compile is necessary.
 	
-BotMessages.resx			*Resource file containing message replies to be sent by the bot. 
+**BotMessages.resx**
+Resource file containing message replies to be sent by the bot. 
 
 ## More Information
 
