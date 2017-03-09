@@ -19,7 +19,7 @@ You can read more about authentication and deployment [here](https://docs.botfra
 
 ## Solution Overview
 
-![alt tag](https://raw.githubusercontent.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/master/samplebot/images/SolutionOverview.png)
+![alt tag](https://raw.githubusercontent.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SolutionOverview.png)
 
 Controller
 	/MessagesController.cs *This contains the main class responsible for the conversation. The entry point for each message is the following post message. *
