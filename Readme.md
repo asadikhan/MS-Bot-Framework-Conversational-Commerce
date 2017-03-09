@@ -19,7 +19,7 @@ You can read more about authentication and deployment [here](https://docs.botfra
 
 ## Solution Overview
 
-![alt tag](https://raw.githubusercontent.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/master/samplebot/images/SolutionOverview.png)
+![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SolutionOverview.png)
 
 **Controller/MessagesController.cs** 
 This contains the main class responsible for the conversation. The entry point for each message is the following post message.
@@ -52,3 +52,7 @@ Resource file containing message replies to be sent by the bot.
 ## More Information
 
 There will be a more detailed tutorial on this solution on my blog. This space will be updated as soon as the tutorial becomes available on my [blog](https://asadkhanonline.wordpress.com/)
+
+## Sample Emulator Chat
+
+![alt tag](https://github.com/asadikhan/MS-Bot-Framework-Conversational-Commerce/blob/master/SampleBot/images/SampleEmulatorChat.png)
